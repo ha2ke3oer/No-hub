@@ -28,11 +28,11 @@ end)
 Section:NewButton("Noonie Hardcore", "Have Fun!", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/fT92NSzU'))()
 end)
-Section:NewButton("doors extreme", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/ygf/none/README.md", true))()
+Section:NewButton("doors extreme", "Have Fun!",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/yfff/main/%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26%2520%26404"))()
 end)
 Section:NewButton("room & doors mode", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/roomsanddoors-20-20-20-20-20-20/main/README.md", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/roomsanddoors-20-20-20-20-20-20/main/%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26%2520%26404"))()
 end)
 Section:NewButton("forbidden mode", "Have Fun!", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Check6969/Utilities/main/Mod/forbidden_mode.lua"))()
@@ -178,6 +178,42 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/CreepyPSC/dxrkhub/mai
 end)
 Section:NewButton("Fire hub", "Have Fun!", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/InfernusScripts/Fire-Hub/main/Fire%20HUB.lua' ))()
+end)
+Section:NewButton("morph entity", "Have Fun!", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))()
+end)
+Section:NewButton("a 60 morph", "Have Fun!", function()
+local Ambush = game:GetObjects("rbxassetid://12480629375")[1]
+for i,v in pairs(game.Workspace:GetChildren()) do
+    if v.Name == "Ambush" then
+        v:Destroy()
+    end
+end
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v:IsA("MeshPart") then
+        v.Transparency = 1
+    end
+    if v:IsA("Part") then
+        v.Transparency = 1
+    end
+    if v:IsA("Accessory") then
+        v:Destroy()
+    end
+    game.Players.LocalPlayer.Character.Head.face.Transparency = 1
+end
+Ambush.Parent = game.Workspace
+Ambush.Ripe.Anchored = true
+game:GetService("RunService").RenderStepped:Connect(function()
+    Ambush:PivotTo(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 1, 0))
+    game.Workspace.CurrentCamera.CFrame = (game.Players.LocalPlayer.Character.Head.CFrame * CFrame.Angles(math.rad(-30),0,0)) * CFrame.new(0,0.5,10)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+end)
+end)
+Section:NewButton("nerd v5", "Have Fun!", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/NeRDV5.lua"))()
+end)
+Section:NewButton("exolution hub ", "Have Fun!", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ExolutionProject/Scripts/main/ExolutionPremiumHub.lua'))() 
 end)
 local Tab = Window:NewTab("Item")
 local Section = Tab:NewSection("Item")
