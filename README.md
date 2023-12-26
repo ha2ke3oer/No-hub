@@ -215,58 +215,8 @@ end)
 Section:NewButton("exolution hub ", "Have Fun!", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ExolutionProject/Scripts/main/ExolutionPremiumHub.lua'))() 
 end)
-Section:NewButton("morph rebound", "Have Fun!", function()
-local Ambush = game:GetObjects("rbxassetid://12403052797")[1]
-for i,v in pairs(game.Workspace:GetChildren()) do
-    if v.Name == "Ambush" then
-        v:Destroy()
-    end
-end
-for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-    if v:IsA("MeshPart") then
-        v.Transparency = 1
-    end
-    if v:IsA("Part") then
-        v.Transparency = 1
-    end
-    if v:IsA("Accessory") then
-        v:Destroy()
-    end
-    game.Players.LocalPlayer.Character.Head.face.Transparency = 1
-end
-Ambush.Parent = game.Workspace
-Ambush.Torso.Anchored = true
-game:GetService("RunService").RenderStepped:Connect(function()
-    Ambush:PivotTo(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 1, 0))
-    game.Workspace.CurrentCamera.CFrame = (game.Players.LocalPlayer.Character.Head.CFrame * CFrame.Angles(math.rad(-30),0,0)) * CFrame.new(0,0.5,10)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
-end)
-Section:NewButton("morph ripper", "Have Fun!", function()
-local Ambush = game:GetObjects("rbxassetid://11204372315")[1]
-for i,v in pairs(game.Workspace:GetChildren()) do
-    if v.Name == "Ambush" then
-        v:Destroy()
-    end
-end
-for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-    if v:IsA("MeshPart") then
-        v.Transparency = 1
-    end
-    if v:IsA("Part") then
-        v.Transparency = 1
-    end
-    if v:IsA("Accessory") then
-        v:Destroy()
-    end
-    game.Players.LocalPlayer.Character.Head.face.Transparency = 1
-end
-Ambush.Parent = game.Workspace
-Ambush.Torso.Anchored = true
-game:GetService("RunService").RenderStepped:Connect(function()
-    Ambush:PivotTo(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 1, 0))
-    game.Workspace.CurrentCamera.CFrame = (game.Players.LocalPlayer.Character.Head.CFrame * CFrame.Angles(math.rad(-30),0,0)) * CFrame.new(0,0.5,10)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-end)
+Section:NewButton("anti door extreme", "Have Fun!", function()
+
 local Tab = Window:NewTab("Item")
 local Section = Tab:NewSection("Item")
 Section:NewButton("Lucky block", "Have Fun!", function()
