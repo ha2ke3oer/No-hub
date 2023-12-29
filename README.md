@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("No hub and door v1.5", "GrapeTheme")
+local Window = Library.CreateLib("No Doors hub v1.6", "GrapeTheme")
 local Tab = Window:NewTab("Mode & hub")
 local Section = Tab:NewSection("Mode + hub ")
 Section:NewButton("Mayhem Mode", "Have Fun!", function()
@@ -252,3 +252,34 @@ end)
 Section:NewButton("Rebound", "Have Fun!", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Rebound/main/README.md"))()
 end)
+local Tab = Window:NewTab("fight mode")
+Section:NewButton("d&r and extreme", "Have Fun!", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/yfff/main/%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26%2520%26404"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/roomsanddoors-20-20-20-20-20-20/main/%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26%2520%26404"))()
+end)
+Section:NewButton("extreme & crazy", "Have Fun!", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Extreme-and-crazy-mode-door/main/Unknowgetkey"))()
+end)
+Section:NewButton("all mode", "Have Fun!", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/HollowedOutMods/MayhemMode/main/loader.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Ukazix/impossible-mode/main/Protected_79.lua.txt'))()
+--Credits to NovaNextruis, Muhammadgames, Zavaled, SquidR
+--ICherryKardess, Screech, Jessica, TheEndIsNear, C87FM
+--Your game might crash when you get an achievement
+
+game.SoundService.AmbientReverb = "City"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/Script.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/ScriptNoAchievements.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/seekeye.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/seekmodel.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/VictrolaRecreation.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/MusicReplace.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/DeathSound.txt"))()
+loadstring(game:HttpGet("https://glot.io/snippets/gpw1ypnl5o/raw/main.lua"))()
+loadstring(game:HttpGet('https://pastebin.com/raw/fT92NSzU'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/yfff/main/%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26%2520%26404"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/roomsanddoors-20-20-20-20-20-20/main/%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26%2520%26404"))()
+end)
+
+
+
