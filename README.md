@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("No hub v1.5", "GrapeTheme")
+local Window = Library.CreateLib("No hub and door v1.5", "GrapeTheme")
 local Tab = Window:NewTab("Mode & hub")
 local Section = Tab:NewSection("Mode + hub ")
 Section:NewButton("Mayhem Mode", "Have Fun!", function()
