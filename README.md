@@ -268,6 +268,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Deer-god/ma
 end)
 Section:NewButton("smiler", "Have Fun!", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Primes-a-60/main/SMILER-IMPOSSIBLE"))()
+end)
 local Tab = Window:NewTab("fight mode")
 local Section = Tab:NewSection("mode +++")
 Section:NewButton("d&r and extreme", "Have Fun!", function()
