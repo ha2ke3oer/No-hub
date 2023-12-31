@@ -229,7 +229,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/VaniaPerets/FolderGui
 end)
 Section:NewButton("Blade Ball ", "Have Fun!", function()
 loadstring(HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Bladeball-script-no-work/main/README.md"))()
-
+end)
 local Tab = Window:NewTab("Item")
 local Section = Tab:NewSection("Item")
 Section:NewButton("Lucky block", "Have Fun!", function()
