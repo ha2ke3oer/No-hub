@@ -305,4 +305,4 @@ local Tab = Window:NewTab("other")
 local Section = Tab:NewSection("game")
 Section:NewButton("Blade ball", "HaveFun!", function()
 loadstring(HttpsGet"https://raw.githubusercontent.com/ha2ke3oer/Bladeball-script-no-work/main/README.md"))()
-
+end)
