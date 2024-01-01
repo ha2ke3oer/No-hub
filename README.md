@@ -54,7 +54,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Nivgab/Scripts/main/d
 end)
 Section:NewButton("god mode", "Have Fun!", function()
 local Collison = game.Players.LocalPlayer.Character:FindFirstChild("Collision")
-Collison.Position = Collison.Position - Vector3.new(0,10,0)
+Collison.Position = Collison.Position - Vector3.new(0,20,0)
 end)
 Section:NewButton("pov 120", "Have Fun!", function()
 game:GetService("RunService").RenderStepped:Connect(function()
