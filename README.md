@@ -185,33 +185,6 @@ end)
 Section:NewButton("morph entity", "Have Fun!", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))()
 end)
-Section:NewButton("a 60 morph", "Have Fun!", function()
-local Ambush = game:GetObjects("rbxassetid://12480629375")[1]
-for i,v in pairs(game.Workspace:GetChildren()) do
-    if v.Name == "Ambush" then
-        v:Destroy()
-    end
-end
-for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-    if v:IsA("MeshPart") then
-        v.Transparency = 1
-    end
-    if v:IsA("Part") then
-        v.Transparency = 1
-    end
-    if v:IsA("Accessory") then
-        v:Destroy()
-    end
-    game.Players.LocalPlayer.Character.Head.face.Transparency = 1
-end
-Ambush.Parent = game.Workspace
-Ambush.Ripe.Anchored = true
-game:GetService("RunService").RenderStepped:Connect(function()
-    Ambush:PivotTo(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 1, 0))
-    game.Workspace.CurrentCamera.CFrame = (game.Players.LocalPlayer.Character.Head.CFrame * CFrame.Angles(math.rad(-30),0,0)) * CFrame.new(0,0.5,10)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
-end)
-end)
 Section:NewButton("nerd v5", "Have Fun!", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/NeRDV5.lua"))()
 end)
@@ -253,8 +226,6 @@ end)
 Section:NewButton("Crucifix", "Have Fun!", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/ygf/main/README.md", true))()
 end)
-Section:NewButton("Crucifix hub", "Have Fun", function()
-loadstring(game:HttpGet("https://controlc.com/cd8d490d"))()
 local Tab = Window:NewTab("spawn entity")
 local Section = Tab:NewSection("spawn")
 Section:NewButton("blink", "Have Fun!", function()
