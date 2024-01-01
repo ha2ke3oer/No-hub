@@ -270,7 +270,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Figurecruci
 end)
 Section:NewButton("sword crucifix", "Have Fun!", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Swordcrucifix/main/README.md"))()
-
+end)
 local Tab = Window:NewTab("spawn entity")
 local Section = Tab:NewSection("spawn")
 Section:NewButton("blink", "Have Fun!", function()
