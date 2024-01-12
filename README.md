@@ -40,11 +40,44 @@ end)
 Section:NewButton("Interminable room", "Have Fun!", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/huyhoanphuc/entity-spawn/main/%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%2682662%26862%26862%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26275%2638627%268275263%268376373%26302%2602%2620%2620%2620%26102%263%26082%26297%261752%267551%20%267522%26763%26763%26765273%26763637364%2637636646464%2644646466464646466%266363663636353%266535353'))()
 end)
-Section:NewButton("Stamina", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/huyhoangphuc/none/%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%2520%2620%2620%2620%2620%2630%2630%2630%2630%2673%2630%2630%2630%263863%262866%2630%2630%26308365%2630%263976%2639752%263877%2630%2630%2630%261%261%261%26103%2630"))()
+Section:NewButton("rtx", "Have Fun!", function()
+getgenv().RTX_Name = "rtxnamehere" --not really needed if you don't need it
+
+--[[
+examples auto loads features :
+
+
+getgenv().RTX_Name = "Midday lite" 
+⁹
+-Morning
+-Afternoon
+-Midday
+-Evening
+-Night
+-Midnight
+
+-Morning lite
+-Midday lite
+-Afternoon lite
+-Evening lite
+-Night lite
+-Midnight lite
+
+]]
+
+loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
 end)
 Section:NewButton("dex v3", "Have Fun!", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua"))()
+end)
+Section:NewButton("Backdoor", "Have Fun!", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua"))()
+end)
+Section:NewButton("F3x", "Have Fun!", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/F3X.lua"))()
+end)
+Section:NewButton("Auto report", "Have Fun!", function()
+copy loadstring(game:HttpGet('https://raw.githubusercontent.com/CF-Trail/Auto-Report/main/revamp.lua'))()
 end)
 Section:NewButton("Ghost hub", "Have Fun!", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
@@ -55,29 +88,17 @@ end)
 Section:NewButton("neon hub", "Have Fun!", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Nivgab/Scripts/main/dh/Protected_7560656421504974.lua.txt'))()
 end)
-Section:NewButton("god mode v 0.5" "Have Fun!", function()
-local Collison = game.Players.LocalPlayer.Character:FindFirstChild("Collision")
-Collison.Position = Collison.Position - Vector3.new(0,5,0)
-end)
-Section:NewButton("god mode v 1", "Have Fun!", function()
+Section:NewButton("god mode", "Have Fun!", function()
 local Collison = game.Players.LocalPlayer.Character:FindFirstChild("Collision")
 Collison.Position = Collison.Position - Vector3.new(0,10,0)
 end)
-Section:NewButton("god mode v 1.5", "Have Fun!", function()
+Section:NewButton("Bypass noclip", "Have Fun!", function()
 local Collison = game.Players.LocalPlayer.Character:FindFirstChild("Collision")
-Collison.Position = Collison.Position - Vector3.new(0,15,0)
-end)
-Section:NewButton("god mode v 2", "Have Fun!", function()
-local Collison = game.Players.LocalPlayer.Character:FindFirstChild("Collision")
-Collison.Position = Collison.Position - Vector3.new(0,20,0)
-end)
-Section:NewButton("god mode v 2.5", "Have Fun!", function()
-local Collison = game.Players.LocalPlayer.Character:FindFirstChild("Collision")
-Collison.Position = Collison.Position - Vector3.new(0,25,0)
+Collison.Position = Collison.Position - Vector3.new(0,5,0)
 end)
 Section:NewButton("pov 120", "Have Fun!", function()
 game:GetService("RunService").RenderStepped:Connect(function()
-        game:GetService("Workspace").Camera.FieldOfView = 150
+        game:GetService("Workspace").Camera.FieldOfView = 120
         end)
 end)
 Section:NewButton("ms hub", "Have Fun!", function()
@@ -91,6 +112,11 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/yieviro92creepy/Bddtt
 end)
 Section:NewButton("keyboard", "Have Fun!", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+Section:NewButton("No e wait", "Have Fun!", function()
+game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(function(p)
+                fireproximityprompt(p)
+            end)
 end)
 Section:NewButton("blacking x bobhub [lagging hub]", "Have Fun!", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ZanoLeafVN/Blackking-x-BobHub/main/Bxb-obf.lua', true))()
@@ -183,8 +209,14 @@ end)
 Section:NewButton("Night vision [Press the letter t on the keyboard script]", "Have Fun!", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/iCherryKardes/Doors/main/T%20to%20Night%20Vision"))()
 end)
+Section:NewButton("Bypass Speed", "Have Fun!", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/finngameandglitch/bypass/main/bypass'))()
+end)
 Section:NewButton("spawn entity hub", "Have Fun!", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/UtilitiesHub/main/UtilitiesGUI'))()
+end)
+Section:NewButton("doorsHub", "Have Fun!", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PVOwner/Doors/main/Doors2'))()
 end)
 Section:NewButton("bruh hub", "Have Fun!", function()
 loadstring(game:HttpGet("https://raw.github.com/literallynotbruh/Doors-Hack/main/77_AJ84W5XNC4.lua"))()
@@ -204,7 +236,7 @@ end)
 Section:NewButton("morph entity", "Have Fun!", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))()
 end)
-Section:NewButton("nerd v5", "Have Fun!", function()
+wButton("nerd v5", "Have Fun!", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/NeRDV5.lua"))()
 end)
 Section:NewButton("exolution hub ", "Have Fun!", function()
@@ -219,8 +251,8 @@ end)
 Section:NewButton("darkclientcheat hub", "Have Fun!", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/VaniaPerets/FolderGui-FolderHub/main/loader.lua", true))()
 end)
-Section:NewButton"(old seek", "Have Fun", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/uXY1EAxZ"))()
+Section:NewButton("depth hub", "Have Fun!", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sirapobsriumang/Doors/main/Doors-scriptv2"))()
 end)
 local Tab = Window:NewTab("Item")
 local Section = Tab:NewSection("Item")
@@ -265,5 +297,3 @@ end)
 Section:NewButton("ripper", "Have Fun!", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Ripper-luyer/main/README.md"))()
 end)
-Section:NewButton("Primes a 60", "Have Fun", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Primes-a-60/main/README.md"))()
