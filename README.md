@@ -1,299 +1,899 @@
-local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("No hub v3","GrapeTheme")
-local Tab = Window:NewTab("Mode & hub")
-local Section = Tab:NewSection("Mode + hub ")
-Section:NewButton("Mayhem Mode", "Have Fun!", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/HollowedOutMods/MayhemMode/main/loader.lua'))()
-end)
-Section:NewButton("Impossible Mode", "Have Fun!", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Ukazix/impossible-mode/main/Protected_79.lua.txt'))()
-end)
-Section:NewButton("Endless Doors", "Have Fun!", function()
---Credits to NovaNextruis, Muhammadgames, Zavaled, SquidR
---ICherryKardess, Screech, Jessica, TheEndIsNear, C87FM
---Your game might crash when you get an achievement
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-game.SoundService.AmbientReverb = "City"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/Script.lua"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/ScriptNoAchievements.txt"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/seekeye.lua"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/seekmodel.lua"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/VictrolaRecreation.txt"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/MusicReplace.txt"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Entities/main/DeathSound.txt"))()
-end)
-Section:NewButton("Fragmented Mode", "Have fun!", function()
-loadstring(game:HttpGet("https://glot.io/snippets/gpw1ypnl5o/raw/main.lua"))()
-end)
-Section:NewButton("Noonie Hardcore", "Have Fun!", function()
-loadstring(game:HttpGet('https://pastebin.com/raw/fT92NSzU'))()
-end)
-Section:NewButton("doors extreme", "Have Fun!",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/yfff/main/%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26%2520%26404"))()
-end)
-Section:NewButton("room & doors mode", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/roomsanddoors-20-20-20-20-20-20/main/%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26%2520%26404"))()
-end)
-Section:NewButton("forbidden mode", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Check6969/Utilities/main/Mod/forbidden_mode.lua"))()
-end)
-Section:NewButton("Interminable room", "Have Fun!", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/huyhoanphuc/entity-spawn/main/%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%2682662%26862%26862%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26275%2638627%268275263%268376373%26302%2602%2620%2620%2620%26102%263%26082%26297%261752%267551%20%267522%26763%26763%26765273%26763637364%2637636646464%2644646466464646466%266363663636353%266535353'))()
-end)
-Section:NewButton("rtx", "Have Fun!", function()
-getgenv().RTX_Name = "rtxnamehere" --not really needed if you don't need it
+local Window = OrionLib:MakeWindow({Name = "No hub v3", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+                                                  
 
---[[
-examples auto loads features :
+local MainTab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
+local Section = MainTab:AddSection({
+	Name = "Main"
+})
 
-getgenv().RTX_Name = "Midday lite" 
-⁹
--Morning
--Afternoon
--Midday
--Evening
--Night
--Midnight
+MainTab:AddButton({
+	Name = "Speedhack",
+	Min = 21,
+	Max = 21,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "WS",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
 
--Morning lite
--Midday lite
--Afternoon lite
--Evening lite
--Night lite
--Midnight lite
+MainTab:AddButton({
+	Name = "NoclipGui",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/B5xRxTnk",true))()
+  	end    
+})
 
-]]
+MainTab:AddButton({
+	Name = "Pov 120",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Pov120/main/README.md"))()
+  	end    
+})
 
-loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
-end)
-Section:NewButton("dex v3", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua"))()
-end)
-Section:NewButton("Backdoor", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua"))()
-end)
-Section:NewButton("F3x", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/F3X.lua"))()
-end)
-Section:NewButton("Auto report", "Have Fun!", function()
-copy loadstring(game:HttpGet('https://raw.githubusercontent.com/CF-Trail/Auto-Report/main/revamp.lua'))()
-end)
-Section:NewButton("Ghost hub", "Have Fun!", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
-end)
-Section:NewButton("neon cat hub", "Have Fun!", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/YdaJZKQY"))()
-end)
-Section:NewButton("neon hub", "Have Fun!", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Nivgab/Scripts/main/dh/Protected_7560656421504974.lua.txt'))()
-end)
-Section:NewButton("god mode", "Have Fun!", function()
-local Collison = game.Players.LocalPlayer.Character:FindFirstChild("Collision")
-Collison.Position = Collison.Position - Vector3.new(0,10,0)
-end)
-Section:NewButton("Bypass noclip", "Have Fun!", function()
-local Collison = game.Players.LocalPlayer.Character:FindFirstChild("Collision")
-Collison.Position = Collison.Position - Vector3.new(0,5,0)
-end)
-Section:NewButton("pov 120", "Have Fun!", function()
-game:GetService("RunService").RenderStepped:Connect(function()
-        game:GetService("Workspace").Camera.FieldOfView = 120
-        end)
-end)
-Section:NewButton("ms hub", "Have Fun!", function()
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSHUB_Loader.lua"),true))()
-end)
-Section:NewButton("awesome hub", "Have Fun!", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/yieviro92creepy/Ak/main/Z'))()
-end)
-Section:NewButton("yieviro92creepy hub", "Have Fun!", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/yieviro92creepy/Bddtt/main/Taoao'))()
-end)
-Section:NewButton("keyboard", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
-end)
-Section:NewButton("No e wait", "Have Fun!", function()
-game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(function(p)
-                fireproximityprompt(p)
+MainTab:AddButton({
+	Name = "SpeedBypass",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/finngameandglitch/bypass/main/bypass'))()
+  	end    
+})
+
+MainTab:AddButton({
+	Name = "Godmode",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Godmode/main/README.md"))()
+  	end    
+})
+
+MainTab:AddButton({
+	Name = "No e wait",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Istantpp/main/README.md"))()
+  	end    
+})
+
+local VisualTab = Window:MakeTab({
+	Name = "Visual",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = VisualTab:AddSection({
+	Name = "Visual"
+})
+
+VisualTab:AddButton({
+	Name = "esp door",
+	Callback = function()
+        local function setup(room)
+            local door = room:WaitForChild("Door"):WaitForChild("Door")
+            
+            task.wait(0.1)
+            local h = esp(door,Color3.fromRGB(255,240,0),door,"Door")
+            table.insert(esptable.doors,h)
+            
+            door:WaitForChild("Open").Played:Connect(function()
+                h.delete()
             end)
+            
+            door.AncestryChanged:Connect(function()
+                h.delete()
+            end)
+        end
+        
+        local addconnect
+        addconnect = workspace.CurrentRooms.ChildAdded:Connect(function(room)
+            setup(room)
+        end)
+        
+        for i,room in pairs(workspace.CurrentRooms:GetChildren()) do
+            if room:FindFirstChild("Assets") then
+                setup(room) 
+            end
+        end
+        
+        repeat task.wait() until not flags.espdoors
+        addconnect:Disconnect()
+        
+        for i,v in pairs(esptable.doors) do
+            v.delete()
+        end 
+    end
 end)
-Section:NewButton("blacking x bobhub [lagging hub]", "Have Fun!", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/ZanoLeafVN/Blackking-x-BobHub/main/Bxb-obf.lua', true))()
+  	end
+})
+VisualTab:AddButton({
+	Name = "esp key",
+	Callback = function()
+        local function check(v)
+            if v:IsA("Model") and (v.Name == "LeverForGate" or v.Name == "KeyObtain") then
+                task.wait(0.1)
+                if v.Name == "KeyObtain" then
+                    local hitbox = v:WaitForChild("Hitbox")
+                    local parts = hitbox:GetChildren()
+                    table.remove(parts,table.find(parts,hitbox:WaitForChild("PromptHitbox")))
+                    
+                    local h = esp(parts,Color3.fromRGB(90,255,40),hitbox,"Key")
+                    table.insert(esptable.keys,h)
+                    
+                elseif v.Name == "LeverForGate" then
+                    local h = esp(v,Color3.fromRGB(90,255,40),v.PrimaryPart,"Lever")
+                    table.insert(esptable.keys,h)
+                    
+                    v.PrimaryPart:WaitForChild("SoundToPlay").Played:Connect(function()
+                        h.delete()
+                    end) 
+                end
+            end
+        end
+        
+        local function setup(room)
+            local assets = room:WaitForChild("Assets")
+            
+            assets.DescendantAdded:Connect(function(v)
+                check(v) 
+            end)
+                
+            for i,v in pairs(assets:GetDescendants()) do
+                check(v)
+            end 
+        end
+        
+        local addconnect
+        addconnect = workspace.CurrentRooms.ChildAdded:Connect(function(room)
+            setup(room)
+        end)
+        
+        for i,room in pairs(workspace.CurrentRooms:GetChildren()) do
+            if room:FindFirstChild("Assets") then
+                setup(room) 
+            end
+        end
+        
+        repeat task.wait() until not flags.espkeys
+        addconnect:Disconnect()
+        
+        for i,v in pairs(esptable.keys) do
+            v.delete()
+        end 
+    end
 end)
-Section:NewButton("fly hub", "Have Fun!", function()
-loadstring(game:HttpGet(('https://pastebin.com/raw/YvKv4AuY'),true))()
-end)
-Section:NewButton("fix lag", "Have Fun!", function()
--- Made by RIP#6666
-_G.Settings = {
-    Players = {
-        ["Ignore Me"] = true, -- Ignore your Character
-        ["Ignore Others"] = true -- Ignore other Characters
-    },
-    Meshes = {
-        Destroy = false, -- Destroy Meshes
-        LowDetail = true -- Low detail meshes (NOT SURE IT DOES ANYTHING)
-    },
-    Images = {
-        Invisible = true, -- Invisible Images
-        LowDetail = false, -- Low detail images (NOT SURE IT DOES ANYTHING)
-        Destroy = false, -- Destroy Images
-    },
-    Other = {
-        ["No Particles"] = true, -- Disables all ParticleEmitter, Trail, Smoke, Fire and Sparkles
-        ["No Camera Effects"] = true, -- Disables all PostEffect's (Camera/Lighting Effects)
-        ["No Explosions"] = true, -- Makes Explosion's invisible
-        ["No Clothes"] = true, -- Removes Clothing from the game
-        ["Low Water Graphics"] = true, -- Removes Water Quality
-        ["No Shadows"] = true, -- Remove Shadows
-        ["Low Rendering"] = true, -- Lower Rendering
-        ["Low Quality Parts"] = true -- Lower quality parts
-    }
-}
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
-end)
-Section:NewButton("fullbright", "Have Fun!", function()
---[[ Subscribe to Zaptosis on YouTube for more awesome scripts!
+  	end    
+})
 
- 
+VisualTab:AddButton({
+	Name = "esp lever",
+	Callback = function(
+        local function check(v)
+            if v:IsA("Model") and (v.Name == "LeverForGate" or v.Name == "KeyObtain") then
+                task.wait(0.1)
+                if v.Name == "KeyObtain" then
+                    local hitbox = v:WaitForChild("Hitbox")
+                    local parts = hitbox:GetChildren()
+                    table.remove(parts,table.find(parts,hitbox:WaitForChild("PromptHitbox")))
+                    
+                    local h = esp(parts,Color3.fromRGB(90,255,40),hitbox,"Key")
+                    table.insert(esptable.keys,h)
+                    
+                elseif v.Name == "LeverForGate" then
+                    local h = esp(v,Color3.fromRGB(90,255,40),v.PrimaryPart,"Lever")
+                    table.insert(esptable.keys,h)
+                    
+                    v.PrimaryPart:WaitForChild("SoundToPlay").Played:Connect(function()
+                        h.delete()
+                    end) 
+                end
+            end
+        end
+        
+        local function setup(room)
+            local assets = room:WaitForChild("Assets")
+            
+            assets.DescendantAdded:Connect(function(v)
+                check(v) 
+            end)
+                
+            for i,v in pairs(assets:GetDescendants()) do
+                check(v)
+            end 
+        end
+        
+        local addconnect
+        addconnect = workspace.CurrentRooms.ChildAdded:Connect(function(room)
+            setup(room)
+        end)
+        
+        for i,room in pairs(workspace.CurrentRooms:GetChildren()) do
+            if room:FindFirstChild("Assets") then
+                setup(room) 
+            end
+        end
+        
+        repeat task.wait() until not flags.espkeys
+        addconnect:Disconnect()
+        
+        for i,v in pairs(esptable.keys) do
+            v.delete()
+        end 
+    end
+end)
+  	end    
+})
 
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-███▀▀▀███░░░░░░░░░░░░░░░░░░░██░░░░░░░░░░░░░░░░░░░░██░░░░░░░░░
+VisualTab:AddButton({
+	Name = "Esp item",
+	Callback = function()
+        local function check(v)
+            if v:IsA("Model") and (v:GetAttribute("Pickup") or v:GetAttribute("PropType")) then
+                task.wait(0.1)
+                
+                local part = (v:FindFirstChild("Handle") or v:FindFirstChild("Prop"))
+                local h = esp(part,Color3.fromRGB(160,190,255),part,v.Name)
+                table.insert(esptable.items,h)
+            end
+        end
+        
+        local function setup(room)
+            local assets = room:WaitForChild("Assets")
+            
+            if assets then  
+                local subaddcon
+                subaddcon = assets.DescendantAdded:Connect(function(v)
+                    check(v) 
+                end)
+                
+                for i,v in pairs(assets:GetDescendants()) do
+                    check(v)
+                end
+                
+                task.spawn(function()
+                    repeat task.wait() until not flags.espitems
+                    subaddcon:Disconnect()  
+                end) 
+            end 
+        end
+        
+        local addconnect
+        addconnect = workspace.CurrentRooms.ChildAdded:Connect(function(room)
+            setup(room)
+        end)
+        
+        for i,room in pairs(workspace.CurrentRooms:GetChildren()) do
+            if room:FindFirstChild("Assets") then
+                setup(room) 
+            end
+        end
+        
+        repeat task.wait() until not flags.espitems
+        addconnect:Disconnect()
+        
+        for i,v in pairs(esptable.items) do
+            v.delete()
+        end 
+    end
+end)
+  	end    
+})
 
-█▀░░░███░░░░░░░░░░░░░░░░░░░░██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+OtherTab:AddButton({
+	Name = "esp Book and  breaker",
+	Callback = function()
+		                        table.insert(esptable.entity,h)
+                    end
+                end
+                
+                assets.DescendantAdded:Connect(function(v)
+                    check(v) 
+                end)
+                
+                for i,v in pairs(assets:GetDescendants()) do
+                    check(v)
+                end
+            end 
+        end
+        
+        local roomconnect
+        roomconnect = workspace.CurrentRooms.ChildAdded:Connect(function(room)
+            setup(room)
+        end)
+        
+        for i,v in pairs(workspace.CurrentRooms:GetChildren()) do
+            setup(room) 
+        end
+        
+        repeat task.wait() until not flags.esprush
+        addconnect:Disconnect()
+        roomconnect:Disconnect()
+        
+        for i,v in pairs(esptable.entity) do
+            v.delete()
+        end 
+    end
+end)
+  	end    
+})
+OtherTab:AddButton({
+	Name = "Esp entity",
+	Callback = function()
+        local addconnect
+        addconnect = workspace.ChildAdded:Connect(function(v)
+            if table.find(entitynames,v.Name) then
+                task.wait(0.1)
+                
+                local h = esp(v,Color3.fromRGB(255,25,25),v.PrimaryPart,v.Name:gsub("Moving",""))
+                table.insert(esptable.entity,h)
+            end
+        end)
+        
+        local function setup(room)
+            if room.Name == "50" or room.Name == "100" then
+                local figuresetup = room:WaitForChild("FigureSetup")
+            
+                if figuresetup then
+                    local fig = figuresetup:WaitForChild("FigureRagdoll")
+                    task.wait(0.1)
+                    
+                    local h = esp(fig,Color3.fromRGB(255,25,25),fig.PrimaryPart,"Figure")
+                    table.insert(esptable.entity,h)
+                end 
+            else
+                local assets = room:WaitForChild("Assets")
+                
+                local function check(v)
+                    if v:IsA("Model") and table.find(entitynames,v.Name) then
+                        task.wait(0.1)
+                        
+                        local h = esp(v:WaitForChild("Base"),Color3.fromRGB(255,25,25),v.Base,"Snare")
+                        table.insert(esptable.entity,h)
+                    end
+                end
+                
+                assets.DescendantAdded:Connect(function(v)
+                    check(v) 
+                end)
+                
+                for i,v in pairs(assets:GetDescendants()) do
+                    check(v)
+                end
+            end 
+        end
+        
+        local roomconnect
+        roomconnect = workspace.CurrentRooms.ChildAdded:Connect(function(room)
+            setup(room)
+        end)
+        
+        for i,v in pairs(workspace.CurrentRooms:GetChildren()) do
+            setup(room) 
+        end
+        
+        repeat task.wait() until not flags.esprush
+        addconnect:Disconnect()
+        roomconnect:Disconnect()
+        
+        for i,v in pairs(esptable.entity) do
+            v.delete()
+        end 
+    end
+end)
+  	end    
+})
+OtherTab:AddButton({
+	Name = "esp player",
+	Callback = function()
+		if val then
+        local function personesp(v)
+            v.CharacterAdded:Connect(function(vc)
+                local vh = vc:WaitForChild("Humanoid")
+                local torso = vc:WaitForChild("UpperTorso")
+                task.wait(0.1)
+                
+                local h = esp(vc,Color3.fromRGB(255,255,255),torso,v.DisplayName)
+                table.insert(esptable.people,h) 
+            end)
+            
+            if v.Character then
+                local vc = v.Character
+                local vh = vc:WaitForChild("Humanoid")
+                local torso = vc:WaitForChild("UpperTorso")
+                task.wait(0.1)
+                
+                local h = esp(vc,Color3.fromRGB(255,255,255),torso,v.DisplayName)
+                table.insert(esptable.people,h) 
+            end
+        end
+        
+        local addconnect
+        addconnect = game.Players.PlayerAdded:Connect(function(v)
+            if v ~= plr then
+                personesp(v)
+            end
+        end)
+        
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if v ~= plr then
+                personesp(v) 
+            end
+        end
+        
+        repeat task.wait() until not flags.esphumans
+        addconnect:Disconnect()
+        
+        for i,v in pairs(esptable.people) do
+            v.delete()
+        end 
+    end
+  	end    
+})
 
-▀░░░███░░▄█▀██▄░▀████████▄██████░░▄██▀██▄░▄██▀██████░░▄██▀███
+local BypassTab = Window:MakeTab({
+	Name = "Bypass",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
-░░░███░░██░░░██░░░██░░░▀██░░██░░░██▀░░░▀████░░░▀▀░██░░██░░░▀▀
+local Section = BypassTab:AddSection({
+	Name = "Bypass"
+})
 
-░░███░░░▄▄█████░░░██░░░░██░░██░░░██░░░░░██▀█████▄░██░░▀█████▄
+BypassTab:AddButton({
+	Name = "Bypass Screech",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/rX4Fkmry"))()
+  	end    
+})
+local GameTab = Window:MakeTab({
+	Name = "Game",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
-░███░░░▄██░░░██░░░██░░░▄██░░██░░░██▄░░░▄███▄░░░██░██░░█▄░░░██
+GameTab:AddButton({
+	Name = "Notify entity",
+	Callback = function()
+        local addconnect
+        addconnect = workspace.ChildAdded:Connect(function(v)
+            if table.find(entitynames,v.Name) then
+                repeat task.wait() until plr:DistanceFromCharacter(v:GetPivot().Position) < 1000 or not v:IsDescendantOf(workspace)
+                
+                if v:IsDescendantOf(workspace) then
+                    message(v.Name:gsub("Moving",""):lower().." is coming go hide")
+                end
+            end
+        end) 
+        
+        repeat task.wait() until not flags.hintrush
+        addconnect:Disconnect()
+    end
+end)
+  	end    
+})
 
-█████████████▀██▄░██████▀░░░▀████░▀█████▀░██████▀████▄██████▀
+GameTab:AddButton({
+	Name = "Old Seek Modle",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/uXY1EAxZ"))()
+  	end    
+})
 
-░░░░░░░░░░░░░░░░░░██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+GameTab:AddButton({
+	Name = "Skeleton no lock",
+	Callback = function()
+		local addconnect
+        addconnect = workspace.CurrentRooms.ChildAdded:Connect(function(room)
+            local door = room:WaitForChild("Wax_Door",2)
+            
+            if door then
+                door:Destroy() 
+            end
+        end)
+        
+        repeat task.wait() until not flags.noskeledoors
+        addconnect:Disconnect()
+    end
+end)
+        local function deciphercode()
+        local paper = char:FindFirstChild("LibraryHintPaper")
+        local hints = plr.PlayerGui:WaitForChild("PermUI"):WaitForChild("Hints")
+        
+        local code = {[1]="_",[2]="_",[3]="_",[4]="_",[5]="_"}
+            
+            if paper then
+                for i,v in pairs(paper:WaitForChild("UI"):GetChildren()) do
+                    if v:IsA("ImageLabel") and v.Name ~= "Image" then
+                        for i,img in pairs(hints:GetChildren()) do
+                            if img:IsA("ImageLabel") and img.Visible and v.ImageRectOffset == img.ImageRectOffset then
+                                local num = img:FindFirstChild("TextLabel").Text
+                                
+                                code[tonumber(v.Name)] = num 
+                            end
+                        end
+                    end
+                end 
+            end
+            
+            return code
+        end
+        
+        local addconnect
+        addconnect = char.ChildAdded:Connect(function(v)
+            if v:IsA("Tool") and v.Name == "LibraryHintPaper" then
+                task.wait()
+                
+                local code = table.concat(deciphercode())
+                
+                if code:find("_") then
+                    message("get all hints first")
+                else
+                    message("the code is ".. code)
+                end
+            end
+        end)
+        
+        repeat task.wait() until not flags.getcode
+        addconnect:Disconnect()
+    end
+end)
+  	end    
+})
 
-░░░░░░░░░░░░░░░░▄████▄░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+GameTab:AddButton({
+	Name = "A 000 no lock",
+	Callback = function()
+		local function check(room)
+            local door = room:WaitForChild("RoomsDoor_Entrance",2)
+            
+            if door then
+                local prompt = door:WaitForChild("Door"):WaitForChild("EnterPrompt")
+                prompt.Enabled = true
+            end 
+        end
+        
+        local addconnect
+        addconnect = workspace.CurrentRooms.ChildAdded:Connect(function(room)
+            check(room)
+        end)
+        
+        for i,v in pairs(workspace.CurrentRooms:GetChildren()) do
+            check(room)
+        end
+        
+        repeat task.wait() until not flags.roomsnolock
+        addconnect:Disconnect()
+    end
+end)
+  	end    
+})
 
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+OtherTab:AddButton({
+	Name = "Auto loot",
+	Callback = function()
+		local function setup(room)
+            local function check(v)
+                if v:IsA("Model") then
+                    if v.Name == "DrawerContainer" then
+                        local knob = v:WaitForChild("Knobs")
+                        
+                        if knob then
+                            local prompt = knob:WaitForChild("ActivateEventPrompt")
+                            local interactions = prompt:GetAttribute("Interactions")
+                            
+                            if not interactions then
+                                task.spawn(function()
+                                    repeat task.wait(0.1)
+                                        if plr:DistanceFromCharacter(knob.Position) <= 12 then
+                                            fireproximityprompt(prompt)
+                                        end
+                                    until prompt:GetAttribute("Interactions") or not flags.draweraura
+                                end)
+                            end
+                        end
+                    elseif v.Name == "GoldPile" then
+                        local prompt = v:WaitForChild("LootPrompt")
+                        local interactions = prompt:GetAttribute("Interactions")
+                            
+                        if not interactions then
+                            task.spawn(function()
+                                repeat task.wait(0.1)
+                                    if plr:DistanceFromCharacter(v.PrimaryPart.Position) <= 12 then
+                                        fireproximityprompt(prompt) 
+                                    end
+                                until prompt:GetAttribute("Interactions") or not flags.draweraura
+                            end)
+                        end
+                    elseif v.Name:sub(1,8) == "ChestBox" then
+                        local prompt = v:WaitForChild("ActivateEventPrompt")
+                        local interactions = prompt:GetAttribute("Interactions")
+                        
+                        if not interactions then
+                            task.spawn(function()
+                                repeat task.wait(0.1)
+                                    if plr:DistanceFromCharacter(v.PrimaryPart.Position) <= 12 then
+                                        fireproximityprompt(prompt)
+                                    end
+                                until prompt:GetAttribute("Interactions") or not flags.draweraura
+                            end)
+                        end
+                    elseif v.Name == "RolltopContainer" then
+                        local prompt = v:WaitForChild("ActivateEventPrompt")
+                        local interactions = prompt:GetAttribute("Interactions")
+                        
+                        if not interactions then
+                            task.spawn(function()
+                                repeat task.wait(0.1)
+                                    if plr:DistanceFromCharacter(v.PrimaryPart.Position) <= 12 then
+                                        fireproximityprompt(prompt)
+                                    end
+                                until prompt:GetAttribute("Interactions") or not flags.draweraura
+                            end)
+                        end
+                    end 
+                end
+            end
+    
+            local subaddcon
+            subaddcon = room.DescendantAdded:Connect(function(v)
+                check(v) 
+            end)
+            
+            for i,v in pairs(room:GetDescendants()) do
+                check(v)
+            end
+            
+            task.spawn(function()
+                repeat task.wait() until not flags.draweraura
+                subaddcon:Disconnect() 
+            end)
+        end
+        
+        local addconnect
+        addconnect = workspace.CurrentRooms.ChildAdded:Connect(function(room)
+            setup(room)
+        end)
+        
+        for i,room in pairs(workspace.CurrentRooms:GetChildren()) do
+            if room:FindFirstChild("Assets") then
+                setup(room) 
+            end
+        end
+        
+        repeat task.wait() until not flags.draweraura
+        addconnect:Disconnect()
+    end
+end)
+  	end    
+})
+local ModeTab = Window:MakeTab({
+	Name = "Mode",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
-]]
+ModeTab:AddButton({
+	Name = "Impossible mode",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Ukazix/impossible-mode/main/Protected_79.lua.txt'))()
+  	end    
+})
 
+ModeTab:AddButton({
+	Name = "Haymen",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/HollowedOutMods/MayhemMode/main/loader.lua'))() 
+  	end    
+})
 
+ModeTab:AddButton({
+	Name = "Hardcore mode",
+	Callback = function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/fT92NSzU'))() 
+  	end    
+})
 
-local Light = game:GetService("Lighting")
+ModeTab:AddButton({
+	Name = "Fragmented mode",
+	Callback = function()
+		loadstring(game:HttpGet("https://glot.io/snippets/gpw1ypnl5o/raw/main.lua"))()
+  	end
+})
 
+ModeTab:AddButton({
+	Name = "extreme mode",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/yfff/main/%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26%2520%26404"))() 
+  	end    
+})
 
+ModeTab:AddButton({
+	Name = "room & door mode",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/roomsanddoors-20-20-20-20-20-20/main/%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26%2520%26404"))() 
+  	end    
+})
 
-function dofullbright()
+ModeTab:AddButton({
+	Name = "Interminable room mode",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/huyhoanphuc/entity-spawn/main/%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%2682662%26862%26862%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26275%2638627%268275263%268376373%26302%2602%2620%2620%2620%26102%263%26082%26297%261752%267551%20%267522%26763%26763%26765273%26763637364%2637636646464%2644646466464646466%266363663636353%266535353'))() 
+  	end    
+})
 
-Light.Ambient = Color3.new(1, 1, 1)
+ModeTab:AddButton({
+	Name = "Forbidden mode",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Check6969/Utilities/main/Mod/forbidden_mode.lua"))()
+  	end    
+})
+local ScriptTab = Window:MakeTab({
+	Name = "Script",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+ScriptTab:AddButton({
+	Name = "Dex v3",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua"))() 
+  	end    
+})
 
-Light.ColorShift_Bottom = Color3.new(1, 1, 1)
+ScriptTab:AddButton({
+	Name = "Backdoor",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua"))()
+  	end    
+})
 
-Light.ColorShift_Top = Color3.new(1, 1, 1)
+ScriptTab:AddButton({
+	Name = "F3x",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/F3X.lua"))() 
+  	end    
+})
 
-end
+ScriptTab:AddButton({
+	Name = "auto report",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/CF-Trail/Auto-Report/main/revamp.lua'))()
+  	end    
+})
 
+ScriptTab:AddButton({
+	Name = "Ghost hub",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))() 
+  	end    
+})
 
+ScriptTab:AddButton({
+	Name = "neoncat hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/YdaJZKQY"))()
+  	end    
+})
 
-dofullbright()
+ScriptTab:AddButton({
+	Name = "Neon hub",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Nivgab/Scripts/main/dh/Protected_7560656421504974.lua.txt'))()
+  	end    
+})
 
+ScriptTab:AddButton({
+	Name = "Awesome script",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/yieviro92creepy/Ak/main/Z'))() 
+  	end    
+})
 
+ScriptTab:AddButton({
+	Name = "Yieviro92creepy hub",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/yieviro92creepy/Bddtt/main/Taoao'))()
+  	end    
+})
 
-Light.LightingChanged:Connect(dofullbright)
-end)
-Section:NewButton("Night vision [Press the letter t on the keyboard script]", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/iCherryKardes/Doors/main/T%20to%20Night%20Vision"))()
-end)
-Section:NewButton("Bypass Speed", "Have Fun!", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/finngameandglitch/bypass/main/bypass'))()
-end)
-Section:NewButton("spawn entity hub", "Have Fun!", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/UtilitiesHub/main/UtilitiesGUI'))()
-end)
-Section:NewButton("doorsHub", "Have Fun!", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/PVOwner/Doors/main/Doors2'))()
-end)
-Section:NewButton("bruh hub", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.github.com/literallynotbruh/Doors-Hack/main/77_AJ84W5XNC4.lua"))()
-end)
-Section:NewButton("noclip", "Have Fun!", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/B5xRxTnk",true))()
-end)
-Section:NewButton("statue v3", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/toosiwhip/statuev3_script/main/doors"))()
-end)
-Section:NewButton("dxrkhub", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CreepyPSC/dxrkhub/main/doors-scripts/hub-source"))()
-end)
-Section:NewButton("Fire hub", "Have Fun!", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/InfernusScripts/Fire-Hub/main/Fire%20HUB.lua' ))()
-end)
-Section:NewButton("morph entity", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))()
-end)
-wButton("nerd v5", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/NeRDV5.lua"))()
-end)
-Section:NewButton("exolution hub ", "Have Fun!", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/ExolutionProject/Scripts/main/ExolutionPremiumHub.lua'))() 
-end)
-Section:NewButton("ping 7000", "Have Fun!", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/yGqP4zFa"))()
-end)
-Section:NewButton("no gui v1 ", "Have Fun!", function()
-loadstring(game:HttpsGet("https://raw.githubusercontent.com/ha2ke3oer/No-door-gui/main/README.md"))()
-end)
-Section:NewButton("darkclientcheat hub", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/VaniaPerets/FolderGui-FolderHub/main/loader.lua", true))()
-end)
-Section:NewButton("depth hub", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/sirapobsriumang/Doors/main/Doors-scriptv2"))()
-end)
-local Tab = Window:NewTab("Item")
-local Section = Tab:NewSection("Item")
-Section:NewButton("Lucky block", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Lucky%20Block"))()
-end)
-Section:NewButton("magic book", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Magic%20Book"))()
-end)
-Section:NewButton("lazer gun", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Laser%20Gun.lua"))()
-end)
-Section:NewButton("flamethrower", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Flamethrower"))()
-end)
-Section:NewButton("chocolate bar", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Chocolate%20Bar.lua"))()
-end)
-Section:NewButton("flashlight", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Flashlight.lua"))()
-end)
-Section:NewButton("gummy flashlight", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Gummy%20Flashlight.lua"))()
-end)
-Section:NewButton("Crucifix", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/ygf/main/README.md", true))()
-end)
-local Tab = Window:NewTab("spawn entity")
-local Section = Tab:NewSection("spawn")
-Section:NewButton("blink", "Have Fun!", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/8uvEapQw"))()
-end)
-Section:NewButton("Rebound", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Rebound/main/README.md"))()
-end)
-Section:NewButton("c 60", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/X-60/main/README.md"))()
-end)
-Section:NewButton("Deer god", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Deer-god/main/README.md"))()
-end)
-Section:NewButton("ripper", "Have Fun!", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Ripper-luyer/main/README.md"))()
-end)
+ScriptTab:AddButton({
+	Name = "Keyboard",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt
+  	end    
+})
+
+ScriptTab:AddButton({
+	Name = "Blacking x bobhub",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/ZanoLeafVN/Blackking-x-BobHub/main/Bxb-obf.lua', true))()
+  	end    
+})
+
+ScriptTab:AddButton({
+	Name = "Fe fly",
+	Callback = function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/YvKv4AuY'),true))() 
+  	end    
+})
+
+ScriptTab:AddButton({
+	Name = "Night vision [press the letter t on the keybord",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/iCherryKardes/Doors/main/T%20to%20Night%20Vision"))()
+  	end    
+})
+
+ScriptTab:AddButton({
+	Name = "Bypass speed",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/finngameandglitch/bypass/main/bypass'))() 
+  	end    
+})
+
+ScriptTab:AddButton({
+	Name = "Doors hub",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/PVOwner/Doors/main/Doors2'))()
+  	end    
+})
+
+ScriptTab:AddButton({
+	Name = "Bruh hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.github.com/literallynotbruh/Doors-Hack/main/77_AJ84W5XNC4.lua"))() 
+  	end    
+})
+ScriptTab:AddButton({
+	Name = "Dxrk hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CreepyPSC/dxrkhub/main/doors-scripts/hub-source"))() 
+  	end    
+})
+ScriptTab:AddButton({
+	Name = "Morph entity",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))() 
+  	end    
+})
+
+ScriptTab:AddButton({
+	Name = "Exolution hub",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/ExolutionProject/Scripts/main/ExolutionPremiumHub.lua'))() 
+  	end    
+})
+
+ScriptTab:AddButton({
+	Name = "folder Gui",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/VaniaPerets/FolderGui-FolderHub/main/loader.lua", true))()
+  	end    
+})
+
+ScriptTab:AddButton({
+	Name = "depth hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/sirapobsriumang/Doors/main/Doors-scriptv2"))()
+  	end    
+})
+
+ScriptTab:AddButton({
+	Name = "Poop hub",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
+  	end    
+})
+
+ScriptTab:AddButton({
+	Name = "kinghub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/KING-HUB-NO-1/main/kingshubno1"))()
+  	end    
+})
