@@ -1,8 +1,7 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "No hub v2", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "No hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
                                                     
-
 local MainTab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
@@ -36,7 +35,8 @@ MainTab:AddButton({
 MainTab:AddButton({
 	Name = "Pov 120",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Pov120/main/README.md"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Pov120/main/README.md"))()
   	end    
 })
 
@@ -61,46 +61,20 @@ MainTab:AddButton({
   	end    
 })
 
-local BypassTab = Window:MakeTab({
-	Name = "Bypass",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Section = BypassTab:AddSection({
-	Name = "Bypass"
-})
-
-BypassTab:AddButton({
-	Name = "Bypass Screech",
-	Callback = function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/rX4Fkmry"))()
-  	end    
-})
 local GameTab = Window:MakeTab({
 	Name = "Game",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
+local Section = GameTab:AddSection({
+	Name = "Game"
+})
+
 GameTab:AddButton({
-	Name = "Notify entity",
+	Name = "Bypass Screech",
 	Callback = function()
-        local addconnect
-        addconnect = workspace.ChildAdded:Connect(function(v)
-            if table.find(entitynames,v.Name) then
-                repeat task.wait() until plr:DistanceFromCharacter(v:GetPivot().Position) < 1000 or not v:IsDescendantOf(workspace)
-                
-                if v:IsDescendantOf(workspace) then
-                    message(v.Name:gsub("Moving",""):lower().." is coming go hide")
-                end
-            end
-        end) 
-        
-        repeat task.wait() until not flags.hintrush
-        addconnect:Disconnect()
-    end
-end)
+		loadstring(game:HttpGet("https://pastebin.com/raw/rX4Fkmry"))()
   	end    
 })
 
@@ -111,197 +85,14 @@ GameTab:AddButton({
   	end    
 })
 
-GameTab:AddButton({
-	Name = "Skeleton no lock",
-	Callback = function()
-		local addconnect
-        addconnect = workspace.CurrentRooms.ChildAdded:Connect(function(room)
-            local door = room:WaitForChild("Wax_Door",2)
-            
-            if door then
-                door:Destroy() 
-            end
-        end)
-        
-        repeat task.wait() until not flags.noskeledoors
-        addconnect:Disconnect()
-    end
-end)
-        local function deciphercode()
-        local paper = char:FindFirstChild("LibraryHintPaper")
-        local hints = plr.PlayerGui:WaitForChild("PermUI"):WaitForChild("Hints")
-        
-        local code = {[1]="_",[2]="_",[3]="_",[4]="_",[5]="_"}
-            
-            if paper then
-                for i,v in pairs(paper:WaitForChild("UI"):GetChildren()) do
-                    if v:IsA("ImageLabel") and v.Name ~= "Image" then
-                        for i,img in pairs(hints:GetChildren()) do
-                            if img:IsA("ImageLabel") and img.Visible and v.ImageRectOffset == img.ImageRectOffset then
-                                local num = img:FindFirstChild("TextLabel").Text
-                                
-                                code[tonumber(v.Name)] = num 
-                            end
-                        end
-                    end
-                end 
-            end
-            
-            return code
-        end
-        
-        local addconnect
-        addconnect = char.ChildAdded:Connect(function(v)
-            if v:IsA("Tool") and v.Name == "LibraryHintPaper" then
-                task.wait()
-                
-                local code = table.concat(deciphercode())
-                
-                if code:find("_") then
-                    message("get all hints first")
-                else
-                    message("the code is ".. code)
-                end
-            end
-        end)
-        
-        repeat task.wait() until not flags.getcode
-        addconnect:Disconnect()
-    end
-end)
-  	end    
-})
-
-GameTab:AddButton({
-	Name = "A 000 no lock",
-	Callback = function()
-		local function check(room)
-            local door = room:WaitForChild("RoomsDoor_Entrance",2)
-            
-            if door then
-                local prompt = door:WaitForChild("Door"):WaitForChild("EnterPrompt")
-                prompt.Enabled = true
-            end 
-        end
-        
-        local addconnect
-        addconnect = workspace.CurrentRooms.ChildAdded:Connect(function(room)
-            check(room)
-        end)
-        
-        for i,v in pairs(workspace.CurrentRooms:GetChildren()) do
-            check(room)
-        end
-        
-        repeat task.wait() until not flags.roomsnolock
-        addconnect:Disconnect()
-    end
-end)
-  	end    
-})
-
-OtherTab:AddButton({
-	Name = "Auto loot",
-	Callback = function()
-		local function setup(room)
-            local function check(v)
-                if v:IsA("Model") then
-                    if v.Name == "DrawerContainer" then
-                        local knob = v:WaitForChild("Knobs")
-                        
-                        if knob then
-                            local prompt = knob:WaitForChild("ActivateEventPrompt")
-                            local interactions = prompt:GetAttribute("Interactions")
-                            
-                            if not interactions then
-                                task.spawn(function()
-                                    repeat task.wait(0.1)
-                                        if plr:DistanceFromCharacter(knob.Position) <= 12 then
-                                            fireproximityprompt(prompt)
-                                        end
-                                    until prompt:GetAttribute("Interactions") or not flags.draweraura
-                                end)
-                            end
-                        end
-                    elseif v.Name == "GoldPile" then
-                        local prompt = v:WaitForChild("LootPrompt")
-                        local interactions = prompt:GetAttribute("Interactions")
-                            
-                        if not interactions then
-                            task.spawn(function()
-                                repeat task.wait(0.1)
-                                    if plr:DistanceFromCharacter(v.PrimaryPart.Position) <= 12 then
-                                        fireproximityprompt(prompt) 
-                                    end
-                                until prompt:GetAttribute("Interactions") or not flags.draweraura
-                            end)
-                        end
-                    elseif v.Name:sub(1,8) == "ChestBox" then
-                        local prompt = v:WaitForChild("ActivateEventPrompt")
-                        local interactions = prompt:GetAttribute("Interactions")
-                        
-                        if not interactions then
-                            task.spawn(function()
-                                repeat task.wait(0.1)
-                                    if plr:DistanceFromCharacter(v.PrimaryPart.Position) <= 12 then
-                                        fireproximityprompt(prompt)
-                                    end
-                                until prompt:GetAttribute("Interactions") or not flags.draweraura
-                            end)
-                        end
-                    elseif v.Name == "RolltopContainer" then
-                        local prompt = v:WaitForChild("ActivateEventPrompt")
-                        local interactions = prompt:GetAttribute("Interactions")
-                        
-                        if not interactions then
-                            task.spawn(function()
-                                repeat task.wait(0.1)
-                                    if plr:DistanceFromCharacter(v.PrimaryPart.Position) <= 12 then
-                                        fireproximityprompt(prompt)
-                                    end
-                                until prompt:GetAttribute("Interactions") or not flags.draweraura
-                            end)
-                        end
-                    end 
-                end
-            end
-    
-            local subaddcon
-            subaddcon = room.DescendantAdded:Connect(function(v)
-                check(v) 
-            end)
-            
-            for i,v in pairs(room:GetDescendants()) do
-                check(v)
-            end
-            
-            task.spawn(function()
-                repeat task.wait() until not flags.draweraura
-                subaddcon:Disconnect() 
-            end)
-        end
-        
-        local addconnect
-        addconnect = workspace.CurrentRooms.ChildAdded:Connect(function(room)
-            setup(room)
-        end)
-        
-        for i,room in pairs(workspace.CurrentRooms:GetChildren()) do
-            if room:FindFirstChild("Assets") then
-                setup(room) 
-            end
-        end
-        
-        repeat task.wait() until not flags.draweraura
-        addconnect:Disconnect()
-    end
-end)
-  	end    
-})
 local ModeTab = Window:MakeTab({
 	Name = "Mode",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
+})
+
+local Section = ModeTab:AddSection({
+	Name = "Mode"
 })
 
 ModeTab:AddButton({
@@ -359,11 +150,17 @@ ModeTab:AddButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Check6969/Utilities/main/Mod/forbidden_mode.lua"))()
   	end    
 })
+
 local ScriptTab = Window:MakeTab({
 	Name = "Script",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+local Section = ScriptTab:AddSection({
+	Name = "Script"
+})
+
 ScriptTab:AddButton({
 	Name = "Dex v3",
 	Callback = function()
@@ -520,5 +317,341 @@ ScriptTab:AddButton({
 	Name = "kinghub",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/KING-HUB-NO-1/main/kingshubno1"))()
+  	end    
+})
+
+ScriptTab:AddButton({
+	Name = "spawn entity hub",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/UtilitiesHub/main/UtilitiesGUI'))()
+  	end    
+})
+local OtherScriptTab = Window:MakeTab({
+	Name = "OtherScript",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+OtherScriptTab:AddButton({
+	Name = "Remove door 50",
+	Callback = function()
+		game:GetService("Workspace").CurrentRooms:FindFirstChild("50").Door.Door:remove()
+  	end    
+})
+
+OtherScriptTab:AddButton({
+	Name = "Window on evry door",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/therealderkleinetiger/Doors-Public/main/Sally%20on%20every%20Window.lua"))()
+  	end    
+})
+
+OtherScriptTab:AddButton({
+	Name = "Tablet in shop",
+	Callback = function()
+		_G.UpdateStars = false -- stars disappear after picking up a book/breaker pole | false: a little lag
+_G.OnShop = true -- can buy on pre run shop
+_G.Price = 1 -- tablet price on shop
+_G.Description = "FREE IPAD" -- tablet description on shop
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
+  	end    
+})
+
+OtherScriptTab:AddButton({
+	Name = "MCDonalds in door 0",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/MCDonalds"))()
+  	end    
+})
+
+OtherScriptTab:AddButton({
+	Name = "Noclip + Bypass",
+	Callback = function()
+_G.Keybind = "R"
+_G.ClipGui = true
+_G.IncludeNoclip = true
+
+local isEnabled = false
+
+local UIS = game:GetService("UserInputService")
+
+local Plr = game.Players.LocalPlayer
+local Char = Plr.Character or Plr.CharacterAdded:Wait()
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Parent = game.CoreGui
+ScreenGui.Enabled = _G.ClipGui or false
+
+local TextLabel = Instance.new("TextLabel")
+TextLabel.Parent = ScreenGui
+
+TextLabel.AnchorPoint = Vector2.new(1, 0)
+TextLabel.Position = UDim2.new(1, -5, 0, 0)
+TextLabel.Text = "Noclip + Bypasser: Off"
+TextLabel.Size = UDim2.new(0,200,0,75)
+TextLabel.TextScaled = true
+TextLabel.TextStrokeColor3 = Color3.new(1,1,1)
+TextLabel.TextStrokeTransparency = 0
+TextLabel.BackgroundTransparency = 1
+
+function getValue()
+    local value
+    if isEnabled then
+        value = "On"
+    else
+        value = "Off"
+    end
+    return value
+end
+
+UIS.InputBegan:Connect(function(input, gp)
+    if gp then return end
+
+    if input.KeyCode == Enum.KeyCode[_G.Keybind] then
+        isEnabled = not isEnabled
+        task.wait()
+        TextLabel.Text = "Noclip + Bypasser: " .. getValue()
+    end
+end)
+
+game:GetService("RunService").RenderStepped:Connect(function()
+    if not Char:FindFirstChild("HumanoidRootPart") then return end
+    if _G.IncludeNoclip then
+        Char.HumanoidRootPart.CanCollide = not isEnabled
+        Char.Collision.CanCollide = not isEnabled
+    end
+
+    local HrpCFrame = Char.HumanoidRootPart.CFrame
+
+    local ray = Ray.new(HrpCFrame.Position, HrpCFrame.LookVector * 0.5)
+    local part = workspace:FindPartOnRay(ray)
+    if part and part.CanCollide == true and isEnabled then
+        Char.HumanoidRootPart.Anchored = true
+        Char:PivotTo(Char.HumanoidRootPart.CFrame * CFrame.new(0, 1000, 0))
+        task.wait()
+        Char:PivotTo(Char.HumanoidRootPart.CFrame * CFrame.new(0, 0, -4))
+        task.wait()
+        Char:PivotTo(Char.HumanoidRootPart.CFrame * CFrame.new(0, -1000, 0))
+        task.wait(0.1)
+        Char.HumanoidRootPart.Anchored = false
+    end
+end)
+  	end    
+})
+
+OtherScriotTab:AddButton({
+	Name = "Figure Pov Door 100 script",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/hViaKdbk"))()
+  	end    
+})
+
+OtherScriptTab:AddButton({
+	Name = "Figure Pov Door 50 script",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/yAmUcY13"))()
+  	end    
+})
+
+OtherScriptTab:AddButton({
+	Name = "Seek Pov script",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/QPsfr9P4"))()
+  	end    
+})
+
+OtherScriptTab:AddButton({
+	Name = "esp!",
+	Callback = function()
+		hrp.Parent.Humanoid.Changed:Connect(function(property) --//Triggers when any Property changed
+hrp.total.total2.Frame.Size = UDim2.new(1,0,hrp.Parent.Humanoid.Health/100,0) --//Adjusts the size of the green Frame								
+end)
+end
+-- -----------------------------------------------------------------------------------
+function createESP(c) --//Checks and calls the proper function
+bugfix = c:WaitForChild("Head") --// *Used so the children of the character arent nil.
+for i,v in pairs(c:GetChildren()) do
+if checkPart(v) then
+actualESP(v)
+end
+end
+if HEALTHBAR_ACTIVATED then --//If the user decided to
+createHealthbar(c:WaitForChild("HumanoidRootPart")) --//Calls the function of the creation
+end
+end
+-- -----------------------------------------------------------------------------------
+for i,people in pairs(players:GetChildren())do
+if people ~= players.LocalPlayer then
+currentPlayer = people
+								--//Used for Players already in the Game
+createESP(people.Character)
+people.CharacterAdded:Connect(function(character)
+createESP(character)			
+end)
+end
+end
+-- -----------------------------------------------------------------------------------
+end --//End of the entire function
+
+createFlex() --// Does exactly that :)
+  	end    
+})
+
+OtherScriptTab:AddButton({
+	Name = "Fullbright",
+	Callback = function()
+		game:GetService ("Lighting").Brightness = 2 game:GetService ("Lighting").ClockTime = 14 game:GetService ("Lighting").FogEnd = 100000 game:GetService ("Lighting").GlobalShadows = false game:GetService ("Lighting").OutdoorAmbient = Color3.fromRGB (128, 128, 128)
+  	end    
+})
+
+OtherScriptTab:AddButton({
+	Name = "infiniteyield",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+local ItemTab = Window:MakeTab({
+	Name = "Item",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = ItemTab:AddSection({
+	Name = "Item"
+})
+
+ItemTab:AddButton({
+	Name = "lazer gun",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Laser%20Gun.lua"))()
+  	end    
+})
+
+ItemTab:AddButton({
+	Name = "lucky block",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Lucky%20Block"))()
+  	end    
+})
+
+ItemTab:AddButton({
+	Name = "magic book",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Magic%20Book"))()
+  	end    
+})
+
+ItemTab:AddButton({
+	Name = "flamethrower",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Flamethrower"))()
+  	end    
+})
+
+ItemTab:AddButton({
+	Name = "chocolate bar",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Chocolate%20Bar.lua"))()
+  	end    
+})
+
+ItemTab:AddButton({
+	Name = "flashlight",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Flashlight.lua"))()
+  	end    
+})
+
+ItemTab:AddButton({
+	Name = "gummy flashlight",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Gummy%20Flashlight.lua"))()
+end)
+  	end    
+})
+
+ItemTab:AddButton({
+	Name = "crucifix",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/ygf/main/README.md", true))()
+  	end    
+})
+
+ItemTab:AddButton({
+	Name = "crucifix press q in keyboard",
+	Callback = function()
+_G.Uses = 9999
+_G.Range = 999
+_G.OnAnything = true
+_G.Fail = false
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))() 
+  	end    
+})
+
+ItemTab:AddButton({
+	Name = "magnet",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
+  	end    
+})
+
+ItemTab:AddButton({
+	Name = "holy hand",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
+  	end    
+})
+
+ItemTab:AddButton({
+	Name = "minecraft debug",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Debug%20Stick"))()
+  	end    
+})
+
+ItemTab:AddButton({
+	Name = "shears",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
+  	end    
+})
+
+local Spawn entityTab = Window:MakeTab({
+	Name = "Spawn entity",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = SpawnentityTab:AddSection({
+	Name = "Spawnentity"
+})
+
+SpawnentityTab:AddButton({
+	Name = "blink",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/8uvEapQw"))()
+  	end    
+})
+
+SpawnentityTab:AddButton({
+	Name = "rebound",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Rebound/main/README.md"))()
+  	end    
+})
+
+SpawnentityTab:AddButton({
+	Name = "c 60",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/X-60/main/README.md"))()
+  	end    
+})
+
+SpawnentityTab:AddButton({
+	Name = "deer god",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Deer-god/main/README.md"))()
   	end    
 })
