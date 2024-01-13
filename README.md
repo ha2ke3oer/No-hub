@@ -1,7 +1,7 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "No hub v2", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
-                                                  
+                                                    
 
 local MainTab = Window:MakeTab({
 	Name = "Main",
