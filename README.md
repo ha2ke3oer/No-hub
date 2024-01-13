@@ -21,21 +21,20 @@ MainTab:AddButton({
 	Increment = 1,
 	ValueName = "WS",
 	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
 	end    
 })
 
 MainTab:AddButton({
 	Name = "NoclipGui",
 	Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/B5xRxTnk",true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/B5xRxTnk",true))()
   	end    
 })
 
 MainTab:AddButton({
 	Name = "Pov 120",
 	Callback = function()
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Pov120/main/README.md"))()
   	end    
 })
@@ -43,21 +42,21 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Pov120/main
 MainTab:AddButton({
 	Name = "SpeedBypass",
 	Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/finngameandglitch/bypass/main/bypass'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/finngameandglitch/bypass/main/bypass'))()
   	end    
 })
 
 MainTab:AddButton({
 	Name = "Godmode",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Godmode/main/README.md"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Godmode/main/README.md"))()
   	end    
 })
 
 MainTab:AddButton({
 	Name = "No e wait",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Istantpp/main/README.md"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Istantpp/main/README.md"))()
   	end    
 })
 
@@ -73,15 +72,13 @@ local Section = GameTab:AddSection({
 
 GameTab:AddButton({
 	Name = "Bypass Screech",
-	Callback = function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/rX4Fkmry"))()
+	Callback = function()	loadstring(game:HttpGet("https://pastebin.com/raw/rX4Fkmry"))()
   	end    
 })
 
 GameTab:AddButton({
 	Name = "Old Seek Modle",
-	Callback = function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/uXY1EAxZ"))()
+	Callback = function()	loadstring(game:HttpGet("https://pastebin.com/raw/uXY1EAxZ"))()
   	end    
 })
 
@@ -97,57 +94,49 @@ local Section = ModeTab:AddSection({
 
 ModeTab:AddButton({
 	Name = "Impossible mode",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/Ukazix/impossible-mode/main/Protected_79.lua.txt'))()
+	Callback = function()	loadstring(game:HttpGet('https://raw.githubusercontent.com/Ukazix/impossible-mode/main/Protected_79.lua.txt'))()
   	end    
 })
 
 ModeTab:AddButton({
 	Name = "Haymen",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HollowedOutMods/MayhemMode/main/loader.lua'))() 
+	Callback = function()	loadstring(game:HttpGet('https://raw.githubusercontent.com/HollowedOutMods/MayhemMode/main/loader.lua'))() 
   	end    
 })
 
 ModeTab:AddButton({
 	Name = "Hardcore mode",
-	Callback = function()
-		loadstring(game:HttpGet('https://pastebin.com/raw/fT92NSzU'))() 
+	Callback = function()	loadstring(game:HttpGet('https://pastebin.com/raw/fT92NSzU'))() 
   	end    
 })
 
 ModeTab:AddButton({
 	Name = "Fragmented mode",
-	Callback = function()
-		loadstring(game:HttpGet("https://glot.io/snippets/gpw1ypnl5o/raw/main.lua"))()
+	Callback = function()	loadstring(game:HttpGet("https://glot.io/snippets/gpw1ypnl5o/raw/main.lua"))()
   	end
 })
 
 ModeTab:AddButton({
 	Name = "extreme mode",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/yfff/main/%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26%2520%26404"))() 
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/yfff/main/%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26%2520%26404"))() 
   	end    
 })
 
 ModeTab:AddButton({
 	Name = "room & door mode",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/roomsanddoors-20-20-20-20-20-20/main/%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26%2520%26404"))() 
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/roomsanddoors-20-20-20-20-20-20/main/%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26%2520%26404"))() 
   	end    
 })
 
 ModeTab:AddButton({
 	Name = "Interminable room mode",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/huyhoanphuc/entity-spawn/main/%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%2682662%26862%26862%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26275%2638627%268275263%268376373%26302%2602%2620%2620%2620%26102%263%26082%26297%261752%267551%20%267522%26763%26763%26765273%26763637364%2637636646464%2644646466464646466%266363663636353%266535353'))() 
+	Callback = function()	loadstring(game:HttpGet('https://raw.githubusercontent.com/huyhoanphuc/entity-spawn/main/%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%252620%2682662%26862%26862%2620%2620%2620%2620%2620%2620%2620%2620%2620%2620%26275%2638627%268275263%268376373%26302%2602%2620%2620%2620%26102%263%26082%26297%261752%267551%20%267522%26763%26763%26765273%26763637364%2637636646464%2644646466464646466%266363663636353%266535353'))() 
   	end    
 })
 
 ModeTab:AddButton({
 	Name = "Forbidden mode",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Check6969/Utilities/main/Mod/forbidden_mode.lua"))()
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/Check6969/Utilities/main/Mod/forbidden_mode.lua"))()
   	end    
 })
 
@@ -163,167 +152,148 @@ local Section = ScriptTab:AddSection({
 
 ScriptTab:AddButton({
 	Name = "Dex v3",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua"))() 
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua"))() 
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "Backdoor",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua"))()
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua"))()
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "F3x",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/F3X.lua"))() 
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/F3X.lua"))() 
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "auto report",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/CF-Trail/Auto-Report/main/revamp.lua'))()
+	Callback = function()	loadstring(game:HttpGet('https://raw.githubusercontent.com/CF-Trail/Auto-Report/main/revamp.lua'))()
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "Ghost hub",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))() 
+	Callback = function()	loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))() 
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "neoncat hub",
-	Callback = function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/YdaJZKQY"))()
+	Callback = function()	loadstring(game:HttpGet("https://pastebin.com/raw/YdaJZKQY"))()
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "Neon hub",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/Nivgab/Scripts/main/dh/Protected_7560656421504974.lua.txt'))()
+	Callback = function()	loadstring(game:HttpGet('https://raw.githubusercontent.com/Nivgab/Scripts/main/dh/Protected_7560656421504974.lua.txt'))()
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "Awesome script",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/yieviro92creepy/Ak/main/Z'))() 
+	Callback = function()	loadstring(game:HttpGet('https://raw.githubusercontent.com/yieviro92creepy/Ak/main/Z'))() 
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "Yieviro92creepy hub",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/yieviro92creepy/Bddtt/main/Taoao'))()
+	Callback = function()	loadstring(game:HttpGet('https://raw.githubusercontent.com/yieviro92creepy/Bddtt/main/Taoao'))()
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "Keyboard",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "Blacking x bobhub",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/ZanoLeafVN/Blackking-x-BobHub/main/Bxb-obf.lua', true))()
+	Callback = function()	loadstring(game:HttpGet('https://raw.githubusercontent.com/ZanoLeafVN/Blackking-x-BobHub/main/Bxb-obf.lua', true))()
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "Fe fly",
-	Callback = function()
-		loadstring(game:HttpGet(('https://pastebin.com/raw/YvKv4AuY'),true))() 
+	Callback = function()	loadstring(game:HttpGet(('https://pastebin.com/raw/YvKv4AuY'),true))() 
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "Night vision [press the letter t on the keybord",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/iCherryKardes/Doors/main/T%20to%20Night%20Vision"))()
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/iCherryKardes/Doors/main/T%20to%20Night%20Vision"))()
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "Bypass speed",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/finngameandglitch/bypass/main/bypass'))() 
+	Callback = function()	loadstring(game:HttpGet('https://raw.githubusercontent.com/finngameandglitch/bypass/main/bypass'))() 
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "Doors hub",
 	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/PVOwner/Doors/main/Doors2'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PVOwner/Doors/main/Doors2'))()
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "Bruh hub",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.github.com/literallynotbruh/Doors-Hack/main/77_AJ84W5XNC4.lua"))() 
+loadstring(game:HttpGet("https://raw.github.com/literallynotbruh/Doors-Hack/main/77_AJ84W5XNC4.lua"))() 
   	end    
 })
 ScriptTab:AddButton({
 	Name = "Dxrk hub",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/CreepyPSC/dxrkhub/main/doors-scripts/hub-source"))() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CreepyPSC/dxrkhub/main/doors-scripts/hub-source"))() 
   	end    
 })
 ScriptTab:AddButton({
 	Name = "Morph entity",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))() 
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))() 
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "Exolution hub",
 	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/ExolutionProject/Scripts/main/ExolutionPremiumHub.lua'))() 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ExolutionProject/Scripts/main/ExolutionPremiumHub.lua'))() 
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "folder Gui",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/VaniaPerets/FolderGui-FolderHub/main/loader.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VaniaPerets/FolderGui-FolderHub/main/loader.lua", true))()
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "depth hub",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/sirapobsriumang/Doors/main/Doors-scriptv2"))()
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/sirapobsriumang/Doors/main/Doors-scriptv2"))()
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "Poop hub",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
+	Callback = function()	loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "kinghub",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/KING-HUB-NO-1/main/kingshubno1"))()
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/KING-HUB-NO-1/main/kingshubno1"))()
   	end    
 })
 
 ScriptTab:AddButton({
 	Name = "spawn entity hub",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/UtilitiesHub/main/UtilitiesGUI'))()
+	Callback = function()	loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/UtilitiesHub/main/UtilitiesGUI'))()
   	end    
 })
 local OtherScriptTab = Window:MakeTab({
@@ -334,22 +304,20 @@ local OtherScriptTab = Window:MakeTab({
 
 OtherScriptTab:AddButton({
 	Name = "Remove door 50",
-	Callback = function()
-		game:GetService("Workspace").CurrentRooms:FindFirstChild("50").Door.Door:remove()
+	Callback = function()	game:GetService("Workspace").CurrentRooms:FindFirstChild("50").Door.Door:remove()
   	end    
 })
 
 OtherScriptTab:AddButton({
 	Name = "Window on evry door",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/therealderkleinetiger/Doors-Public/main/Sally%20on%20every%20Window.lua"))()
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/therealderkleinetiger/Doors-Public/main/Sally%20on%20every%20Window.lua"))()
   	end    
 })
 
 OtherScriptTab:AddButton({
 	Name = "Tablet in shop",
 	Callback = function()
-		_G.UpdateStars = false -- stars disappear after picking up a book/breaker pole | false: a little lag
+_G.UpdateStars = false -- stars disappear after picking up a book/breaker pole | false: a little lag
 _G.OnShop = true -- can buy on pre run shop
 _G.Price = 1 -- tablet price on shop
 _G.Description = "FREE IPAD" -- tablet description on shop
@@ -360,8 +328,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts
 
 OtherScriptTab:AddButton({
 	Name = "MCDonalds in door 0",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/MCDonalds"))()
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/MCDonalds"))()
   	end    
 })
 
@@ -443,24 +410,23 @@ end)
 OtherScriotTab:AddButton({
 	Name = "Figure Pov Door 100 script",
 	Callback = function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/hViaKdbk"))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/hViaKdbk"))()
   	end    
 })
 
 OtherScriptTab:AddButton({
 	Name = "Figure Pov Door 50 script",
 	Callback = function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/yAmUcY13"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/yAmUcY13"))()
   	end    
 })
 
 OtherScriptTab:AddButton({
 	Name = "Seek Pov script",
 	Callback = function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/QPsfr9P4"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/QPsfr9P4"))()
   	end    
 })
-
 OtherScriptTab:AddButton({
 	Name = "esp!",
 	Callback = function()
@@ -507,8 +473,7 @@ OtherScriptTab:AddButton({
 
 OtherScriptTab:AddButton({
 	Name = "infiniteyield",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	Callback = function()	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
   	end    
 })
 
@@ -525,49 +490,46 @@ local Section = ItemTab:AddSection({
 ItemTab:AddButton({
 	Name = "lazer gun",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Laser%20Gun.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Laser%20Gun.lua"))()
   	end    
 })
 
 ItemTab:AddButton({
 	Name = "lucky block",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Lucky%20Block"))()
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Lucky%20Block"))()
   	end    
 })
 
 ItemTab:AddButton({
 	Name = "magic book",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Magic%20Book"))()
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Magic%20Book"))()
   	end    
 })
 
 ItemTab:AddButton({
 	Name = "flamethrower",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Flamethrower"))()
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Flamethrower"))()
   	end    
 })
 
 ItemTab:AddButton({
 	Name = "chocolate bar",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Chocolate%20Bar.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Chocolate%20Bar.lua"))()
   	end    
 })
 
 ItemTab:AddButton({
 	Name = "flashlight",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Flashlight.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Flashlight.lua"))()
   	end    
 })
 
 ItemTab:AddButton({
 	Name = "gummy flashlight",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Gummy%20Flashlight.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Gummy%20Flashlight.lua"))()
 end)
   	end    
 })
@@ -575,7 +537,7 @@ end)
 ItemTab:AddButton({
 	Name = "crucifix",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/ygf/main/README.md", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/ygf/main/README.md", true))()
   	end    
 })
 
@@ -593,28 +555,28 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucif
 ItemTab:AddButton({
 	Name = "magnet",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
   	end    
 })
 
 ItemTab:AddButton({
 	Name = "holy hand",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
   	end    
 })
 
 ItemTab:AddButton({
 	Name = "minecraft debug",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Debug%20Stick"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Debug%20Stick"))()
   	end    
 })
 
 ItemTab:AddButton({
 	Name = "shears",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
   	end    
 })
 
@@ -631,27 +593,25 @@ local Section = SpawnentityTab:AddSection({
 SpawnentityTab:AddButton({
 	Name = "blink",
 	Callback = function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/8uvEapQw"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/8uvEapQw"))()
   	end    
 })
 
 SpawnentityTab:AddButton({
 	Name = "rebound",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Rebound/main/README.md"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Rebound/main/README.md"))()
   	end    
 })
 
 SpawnentityTab:AddButton({
 	Name = "c 60",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/X-60/main/README.md"))()
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/X-60/main/README.md"))()
   	end    
 })
 
 SpawnentityTab:AddButton({
 	Name = "deer god",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Deer-god/main/README.md"))()
+	Callback = function()	loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Deer-god/main/README.md"))()
   	end    
 })
