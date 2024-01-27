@@ -1,11 +1,7 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("No hub V3.2", "DarkTheme")
-local Tab = Window:NewTab("Mode")
-local Section = Tab:NewSection("Mode")
-Section:NewButton("Impossible mode", "ButtonInfo", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Ukazix/impossible-mode/main/Protected_79.lua.txt'))()
-end)
-local Section = Tab:NewSection("Mode")
+local Window = Library.CreateLib("NW hub V3", "DarkTheme")
+local Tab = Window:NewTab("modes")
+local Section = Tab:NewSection("mode")
 Section:NewButton("hardcore mode", "ButtonInfo", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/fT92NSzU'))()
 end)
@@ -41,9 +37,14 @@ end)
 Section:NewButton("forbidden mode", "ButtonInfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Check6969/Utilities/main/Mod/forbidden_mode.lua"
 end)
+Section:NewButton("furry mode", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Furrymode/main/README.md"))()
+end)
+section:NewButton("hazy mode", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Hazy-mode/main/README.md"))()
+end)
 local Tab = Window:NewTab("Script")
 local Section = Tab:NewSection("Script")
-local Section = Tab:NewSection("Mode")
 Section:NewButton("dex v3", "ButtonInfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua"))() 
 end)
@@ -101,86 +102,34 @@ end)
 Section:NewButton("spawn entity hub", "ButtonInfo", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/UtilitiesHub/main/UtilitiesGUI'))()
 end)
-local Tab = Window:NewTab("bypass")
-local Section = Tab:NewSection("bypass")
-Section:NewButton("bypass speed", "ButtonInfo", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/finngameandglitch/bypass/main/bypass'))() 
-end)
-Section:NewButton("bypass noclip + godmode", "ButtonInfo", function()
-local Collison = game.Players.LocalPlayer.Character:FindFirstChild("Collision") Collison.Position = Collison.Position - Vector3.new(0,5,0) end)
-end)
-Section:NewButton("bypass screech", "ButtonInfo", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/rX4Fkmry"))()
-end)
-local Tab = Window:NewTab("Game")
-local Section = Tab:NewSection("Game")
-Section:NewButton("speed slider", "ButtonInfo", function()
-    Min = 16,
-	Max = 21,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "WS",
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-end)
 Section:NewButton("old seek", "ButtonInfo", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/uXY1EAxZ"))()
 end)
-Section:NewButton("fullbright", "ButtonInfo", function()
-local Light = game:GetService("Lighting")
-
-
-
-function dofullbright()
-
-Light.Ambient = Color3.new(1, 1, 1)
-
-Light.ColorShift_Bottom = Color3.new(1, 1, 1)
-
-Light.ColorShift_Top = Color3.new(1, 1, 1)
-
-end
-
-
-
-dofullbright()
-
-
-
-Light.LightingChanged:Connect(dofullbright)
+local Tab = Window:NewTab("other script")
+local Section = Tab:NewSection("other script")
+Section:NewButton("remove door 50", "ButtonInfo", function()
+game:GetService("Workspace").CurrentRooms:FindFirstChild("50").Door.Door:remove()
 end)
-Section:NewButton("pov 120", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Pov120/main/README.md"))()
+Section:NewButton("window in every door", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/therealderkleinetiger/Doors-Public/main/Sally%20on%20every%20Window.lua"))()
 end)
-Section:NewButton("no e wait", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Istantpp/main/README.md"))()
+Section:NewButton("tablet in shop", "ButtonInfo", function()
+_G.UpdateStars = false -- stars disappear after picking up a book/breaker pole | false: a little lag
+_G.OnShop = true -- can buy on pre run shop
+_G.Price = 1 -- tablet price on shop
+_G.Description = "FREE IPAD" -- tablet description on shop
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
+  	end    
 end)
-local Tab = Window:NewTab("spawn entity")
-local Section = Tab:NewSection("Spawn entity")
-Section:NewButton("blink", "ButtonInfo", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/8uvEapQw"))()
+Section:NewButton("figure door 100 pov", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/hViaKdbk"))()
 end)
-Section:NewButton("rebound", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Rebound/main/README.md"))()
+Section:NewButton("figure door 50 pov", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/yAmUcY13"))()
 end)
-Section:NewButton("c 60", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/X-60/main/README.md"))()
-end)
-Section:NewButton("deer god", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Deer-god/main/README.md"))()
-end)
-Section:NewButton("a 60", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Primes-a-60/main/README.md"))()
-end)
-Section:NewButton("smiler", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Smiler/main/README.md"))()
-end)
-Section:NewButton("depth", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Depth/main/README.md"))()
-end)
-Section:NewButton("ripper", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ha2ke3oer/Ripper-luyer/main/README.md"))()
+Section:NewButton("seek pov", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/QPsfr9P4"))()
 end)
 local Tab = Window:NewTab("item")
 local Section = Tab:NewSection("item")
@@ -207,20 +156,4 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Gum
 end)
 Section:NewButton("crucifix", "ButtonInfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/huyhoanphuc/ygf/main/README.md", true))()
-end)
-Section:NewButton("crucifix press q in keyboard", "ButtonInfo", function()
-_G.Uses = 9999
-_G.Range = 999
-_G.OnAnything = true
-_G.Fail = false
-loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))() 
-end)
-Section:NewButton("magnet", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
-end)
-Section:NewButton("holyhand", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
-end)
-Section:NewButton("", "ButtonInfo", function()
-
 end)
